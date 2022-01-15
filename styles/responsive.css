@@ -1,5 +1,5 @@
 /* ---------------
-    Small Devices
+    Mobile Devices
 ------------------ */
 @media only screen and (max-width: 600px) {
     /* Common Styles */
@@ -12,6 +12,7 @@
         padding: 25px 0 25px 0;
     }
     .grid-container{
+        width: 100%;
         padding: 25px 15px 25px 15px;
     }
     /* Header Section */
@@ -101,8 +102,88 @@
 
 }
 
+/* ------------------
+    Potrait Tablet
+--------------------- */
+@media only screen and (min-width: 600px) {
+    main{
+        width: 100%;
+    }
+    .flex-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 25px 50px 25px 50px;
+    }
+    .grid-container{
+        padding: 25px 0 25px 0;
+    }
+    /* Header Section */
+    header h2{
+        padding-left: 25px;
+    }
+    header nav ul{
+        padding-right: 25px;
+    }
+    nav ul li{
+        padding-left: 10px;
+    }
+    /* Hero Section */
+
+    .site-title{
+        margin-right: 60px;
+        margin-left: 25px;
+        margin-right: 150px;
+    }
+    .site-title h1{
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 0;
+    }
+    .site-title p{
+        padding-top: 20px;
+    }
+    .site-title a i{
+        padding-left: 10px;
+    }
+    .hero-image img{
+        width: 200px;
+    }
+
+    /* Company Logos */
+    .company-logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    .company-logos img{
+        padding: 10px 15px;
+        width: 10%;
+    }
+    /* Products */
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+    .see-more, a{
+        text-align: center;
+        padding-top: 30px;
+    }
+    /* Testimonials */
+    .reviews{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 15px;
+        padding: 10px 10px 25px 10px;
+    }
+    
+}
+
 /* -----------------
-    Medium Devices 
+    Tablet Devices 
 --------------------   */
 @media only screen and (min-width: 768px) {
     main{
@@ -182,11 +263,9 @@
 }
 
 /* -----------------
-    Large Devices 
+    Laptop & PC 
 --------------------   */
-@media only screen and (min-width: 992px){
-    /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@media only screen and (min-width: 992px) {
 
 /* Common Styles */
 body{
@@ -261,11 +340,6 @@ nav ul a{
 }
 .site-title a i{
     padding-left: 10px;
-}
-.hero-image{
-    background-image: url(images/Circle\ design.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .hero-image img{
     width: 450px;
