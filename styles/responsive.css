@@ -1,0 +1,68 @@
+/* ---------------
+    Small Devices
+------------------ */
+@media only screen and (max-width: 600px) {
+    /* Common Styles */
+    body{
+        width: 640px;
+    }
+    .container{
+        display: block;
+        padding: 0 0 55px 0;
+    }
+    /* Header Section */
+    header{
+        align-items: center;
+        padding: 35px 0 22px 0;
+    }
+    header h2{
+        font-size: 16px;
+    }
+    header nav{
+        display: none;
+    }
+    /* Hero Section */
+    .site-title{
+        text-align: center;
+    }
+    .site-title h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .site-title p{
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .site-title a{
+        font-weight: 500;
+        font-size: 16px;
+        padding: 10px 24px;
+        border-radius: 41px;
+    }
+    .site-title a i{
+        padding-left: 8px;
+    }
+    .hero-image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        margin-top: 25px;
+    }
+    .hero-image img{
+        width: 202px;   
+    }
+}
+@media only screen and (min-width: 600px) {
+    
+}
+@media only screen and (min-width: 768px) {
+    
+}
+@media only screen and (min-width: 992px) {
+    
+}
+@media only screen and (min-width: 1200px) {
+    
+}
