@@ -3,17 +3,21 @@
 ------------------ */
 @media only screen and (max-width: 600px) {
     /* Common Styles */
-    body{
-        width: 640px;
-    }
-    .container{
+    /* main{
+        width: 100%;
+    } */
+    .flex-container{
+        width: 100%;
         display: block;
-        padding: 0 0 55px 0;
+        padding: 25px 0 25px 0;
+    }
+    .grid-container{
+        padding: 25px 15px 25px 15px;
     }
     /* Header Section */
     header{
         align-items: center;
-        padding: 35px 0 22px 0;
+        padding: 35px 0 10px 0;
     }
     header h2{
         font-size: 16px;
@@ -24,6 +28,7 @@
     /* Hero Section */
     .site-title{
         text-align: center;
+        width: 100%;
     }
     .site-title h1{
         font-size: 28px;
@@ -33,6 +38,7 @@
         margin-top: 15px;
         font-weight: 500;
         font-size: 14px;
+        margin: 0 15px 0 15px;
     }
     .site-title a{
         font-weight: 500;
@@ -47,12 +53,52 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
-        margin-top: 25px;
+        width: 65%;
+        margin-top: 40px;
     }
     .hero-image img{
-        width: 202px;   
+        width: 250px;  
     }
+    /* Company Logos */
+    .company-logos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        border: none;
+        padding-bottom: 0px;
+        padding-top: 0;
+    }
+    .company-logos img{
+        padding: 10px 15px;
+        width: 15%;
+    }
+    /* Products */
+    .section-title{
+        font-size: 21px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 15px;
+        padding: 10px 10px 0 10px;
+    }
+    .see-more, a{
+        padding-right: 10px;
+        padding-top: 30px;
+    }
+    /* Testimonials */
+    .reviews{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 15px;
+        padding: 10px 10px 25px 10px;
+    }
+
 }
 @media only screen and (min-width: 600px) {
     
